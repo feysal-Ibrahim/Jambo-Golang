@@ -26,8 +26,8 @@ Let’s install go1.11.2 on your PC or server
 
 If you are ready, update and upgrade the Ubuntu packages on your machine. This ensures that you have the latest security patches and fixes, as well as updated repos for your new packages.
 
-`sudo apt-get update`
-`sudo apt-get -y upgrade`
+* `sudo apt-get update`
+* `sudo apt-get -y upgrade`
 
 With that complete, you can begin downloading the latest package for Go by running this command, which will pull down the Go package file, and save it to your current working directory, which you can determine by running pwd.
 
@@ -51,6 +51,7 @@ First, set Go’s root value, which tells Go where to look for its files.
 At the end of the file, add this line:
 
 `export GOPATH=$HOME/work`
+
 `export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin`
 
 **$HOME/work** can point to any directory. This directory will be the directory where all your awesome golang magic will happen and **go get** will put all the files.
