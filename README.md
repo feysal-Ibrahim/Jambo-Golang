@@ -73,7 +73,7 @@ Now that Go is installed and the paths are set for your machine, you can test to
 
 Easy and simplest way: type
 
-`go version` _//and it should print the installed go version 1.11.2_
+`go version` _// and it should print the installed go version 1.11.2_
 
 Create a new directory for your Go workspace, which is where Go will build its files.
 
@@ -99,11 +99,13 @@ Next, you can create a simple “Hello World” Go file.
 
 Inside your editor, paste in the content below, which uses the main Go packages, imports the formatted IO content component, and sets a new function to print ‘Hello World’ when run.
 
-* `package main`
-* `import "fmt"`
-* `func main() {`
-* `    fmt.Printf("hello, world\n")`
-* `}`
+`package main`
+
+`import "fmt"`
+
+`func main() {`
+`	fmt.Printf("hello, world\n")`
+`}`
 
 This file will show “Hello, World” if it successfully runs, which shows that Go is building files correctly. Save and close the file, then compile it invoking the Go command **install**.
 
