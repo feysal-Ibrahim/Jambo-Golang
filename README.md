@@ -123,6 +123,6 @@ By downloading and installing the latest Go package and setting its paths, you n
 Check out the original version from DigitalOcean, this post is a copy, but for the 1.11.2 version: [https://www.digitalocean.com/community/tutorials/how-to-install-go-1-6-on-ubuntu-16-04]()
 
 ***
-## ###  If you still have issues with Go installation irrespective of the version you are Installing, kindly reach me at my
-## ###  linkedln [https://linkedin.com/in/feisal-ibrahim-05594615b/]()
-## ###  email: [iamfeysal@gmail.com]()
+###  If you still have issues with Go installation irrespective of the version you are Installing, kindly reach me at my
+###  linkedln [https://linkedin.com/in/feisal-ibrahim-05594615b/]()
+###  email: [iamfeysal@gmail.com]()
