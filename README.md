@@ -104,8 +104,8 @@ Inside your editor, paste in the content below, which uses the main Go packages,
 `import "fmt"`
 
 `func main() {`
-`	fmt.Printf("hello, world\n")`
-`}`
+* `	fmt.Printf("hello, world\n")`
+* `}`
 
 This file will show “Hello, World” if it successfully runs, which shows that Go is building files correctly. Save and close the file, then compile it invoking the Go command **install**.
 
