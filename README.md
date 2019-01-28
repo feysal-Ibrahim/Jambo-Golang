@@ -36,8 +36,8 @@ With that complete, you can begin downloading the latest package for Go by runni
 
 Next, use tar to unpack the package. This command will use the Tar tool to open and expand the downloaded file, and creates a folder using the package name, and then moves it to /usr/local.
 
-`tar -xvf go1.11.2.linux-amd64.tar.gz`
-`sudo mv go /usr/local`
+* `tar -xvf go1.11.2.linux-amd64.tar.gz`
+* `sudo mv go /usr/local`
 
 Some users prefer different locations for their Go installation, or may have mandated software locations. The Go package is now in **/usr/local** which also ensures Go is in your **$PATH** for Linux. It is possible to install Go to an alternate location but the **$PATH** information will change. The location you pick to house your Go folder will be referenced later in this tutorial, so remember where you placed it if the location is different than **/usr/local**.
 
@@ -51,17 +51,17 @@ First, set Go’s root value, which tells Go where to look for its files.
 
 At the end of the file, add this line:
 
-`export GOPATH=$HOME/work`
+* `export GOPATH=$HOME/work`
 
-`export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin`
+* `export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin`
 
 **$HOME/work** can point to any directory. This directory will be the directory where all your awesome golang magic will happen and **go get** will put all the files.
 
 If you chose an alternate installation location for Go, add these lines instead to the same file. This example shows the commands if Go is installed in your home directory:
 
-`export GOROOT=$HOME/go`
-`export GOPATH=$HOME/work`
-`export PATH=$PATH:$GOROOT/bin:$GOPATH/bin`
+* `export GOROOT=$HOME/go`
+* `export GOPATH=$HOME/work`
+* `export PATH=$PATH:$GOROOT/bin:$GOPATH/bin`
 
 With the appropriate line pasted into your profile, save and close the file. Next, refresh your profile by running:
 
@@ -73,7 +73,7 @@ Now that Go is installed and the paths are set for your machine, you can test to
 
 Easy and simplest way: type
 
-`go version //and it should print the installed go version 1.11.2`
+`go version` _//and it should print the installed go version 1.11.2_
 
 Create a new directory for your Go workspace, which is where Go will build its files.
 
@@ -99,19 +99,19 @@ Next, you can create a simple “Hello World” Go file.
 
 Inside your editor, paste in the content below, which uses the main Go packages, imports the formatted IO content component, and sets a new function to print ‘Hello World’ when run.
 
-`package main`
-`import "fmt"`
-`func main() {`
-`    fmt.Printf("hello, world\n")`
-`}`
+* `package main`
+* `import "fmt"`
+* `func main() {`
+* `    fmt.Printf("hello, world\n")`
+* `}`
 
 This file will show “Hello, World” if it successfully runs, which shows that Go is building files correctly. Save and close the file, then compile it invoking the Go command **install**.
 
-**go install github.com/user/hello**
+`go install github.com/user/hello`
 
 With the file compiled, you can run it by simply referring to the file at your Go path.
 
-**sudo $GOPATH/bin/hello**
+`sudo $GOPATH/bin/hello`
 
 If that command returns “Hello World”, then Go is successfully installed and functional [1].
 
@@ -123,6 +123,6 @@ By downloading and installing the latest Go package and setting its paths, you n
 Check out the original version from DigitalOcean, this post is a copy, but for the 1.11.2 version: [https://www.digitalocean.com/community/tutorials/how-to-install-go-1-6-on-ubuntu-16-04]()
 
 ***
-###  If you still have issues with Go installation irrespective of the version you are Installing, kindly reach me at my
-###  linkedln [https://linkedin.com/in/feisal-ibrahim-05594615b/]()
-###  email: [iamfeysal@gmail.com]()
+## ###  If you still have issues with Go installation irrespective of the version you are Installing, kindly reach me at my
+## ###  linkedln [https://linkedin.com/in/feisal-ibrahim-05594615b/]()
+## ###  email: [iamfeysal@gmail.com]()
