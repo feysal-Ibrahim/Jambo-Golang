@@ -12,6 +12,7 @@ You can use the snap package manager to install the latest version of GO. So if 
 `sudo snap install go --classic`
 
 
+
 ### Method 2
 Or do it yourself
 Or if you want to do it by your own without the help of any packet manager, this tutorial will walk you through downloading and installing Go 1.11.2, as well as building a simple Hello World application.
